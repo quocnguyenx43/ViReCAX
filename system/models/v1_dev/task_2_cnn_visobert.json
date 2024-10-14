@@ -1,0 +1,13 @@
+[{
+    "_id": {
+      "$oid": "66b645bff3cbe148ac346c3f"
+    },
+    "version": 1,
+    "task": "acsa",
+    "pretrained": "uitnlp/visobert",
+    "classifier": "cnn",
+    "acc": 0.3409,
+    "avg_pre": 0.2143,
+    "avg_recall": 0.2448,
+    "avg_f1": 0.2216
+  }]

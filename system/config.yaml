@@ -1,0 +1,87 @@
+mongo:
+  server: 'mongodb://localhost:27017/'
+  database: 'kafka_test'
+  train: 'train'
+  dev: 'dev'
+  report: 'user_report'
+  model_eval: 'model_evaluation'
+  offset: 'offset'
+  acsa_eval: 'acsa_evaluation'
+  prediction: 'prediction'
+  latency: 'respond_time'
+  test: 'test'
+  offset_2: 'offset_2'
+  eval_test: 'evaluate_test'
+
+kafka:
+  server: '127.0.0.1:9092'
+  request: 'request'
+  respond: 'prediction'
+  update: 'model_update'
+
+# "vinai/bartpho-syllable"
+# "uitnlp/visobert"
+# "xlm-roberta-base"
+# "vinai/phobert-base"
+# "bert-base-multilingual-cased"
+#  "distilbert-base-multilingual-cased"
+
+#padding: 
+# Viso 400
+# Distiled, XLM 500
+# Phobert 200 
+
+model:
+  #Testing
+  name: "distilbert-base-multilingual-cased"
+  padding: 500
+  input_token: '[CLS]'
+  sep_token: '[SEP]'
+#strat2: trigger 64 training 6
+#strat3: trigger 64 training 6
+  #General setting
+  device: ''
+  fine_tune: False
+  trigger_batch_size: 128
+  M_time_trigger_batch_size: 4
+  training_batch_size: 32
+  epoch: 5
+  require_acsa: False
+  require_cls: True
+  #CLS
+  cls_lr: 0.001  #default: 0.001
+  num_class: 3
+  cls_padding: 400
+  cls_pretrained: "uitnlp/visobert"
+  cls_classifier: 'lstm'
+
+  #ACSA
+  acsa_pretrained: "distilbert-base-multilingual-cased"
+  acsa_classifier: 'cnn'
+  acsa_padding: 500
+  num_classes_aspect: 4
+  num_aspects: 4
+  dropout: 0.4
+  acsa_lr: 0.001
+
+  #LSTM
+  lstm_hidden_size: 128
+  lstm_num_layers: 1
+  #CNN
+
+  cnn_num_channels: 64
+  cnn_kernel_size: 64
+  cnn_padding: 64
+
+
+experiment:
+  batch_size: 128
+  delay: 0.1
+  # number_of_batch = 0 to push full trainset
+  number_of_batch: 0
+  calculate_latency: True
+
+websockets:
+  port: 8765
+
+

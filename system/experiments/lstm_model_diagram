@@ -1,0 +1,34 @@
+// LSTM Model
+digraph {
+	A [label=Input]
+	B [label="Pretrained Model
+(e.g., DistilBERT/BERT)"]
+	C [label="LSTM1
+(hidden_size=128,
+num_layers=1)"]
+	D [label="LSTM2
+(hidden_size=128,
+num_layers=1)"]
+	E [label="Fully Connected Layer 1
+(512 neurons)"]
+	F [label="Dropout
+(0.4)"]
+	G [label="Fully Connected Layer 2
+(256 neurons)"]
+	H [label="Dropout
+(0.4)"]
+	I [label="Fully Connected Layer 3
+(num_classes neurons)"]
+	J [label="Log Softmax"]
+	K [label=Output]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+}

@@ -1,0 +1,2 @@
+_id,version,task,pretrained,classifier,acc,avg_pre,avg_recall,avg_f1
+66b77aa28cec1ed9417cf76f,53,acsa,uitnlp/visobert,cnn,0.5714285714285714,0.4082792207792208,0.46875,0.42490842490842484

@@ -1,0 +1,2 @@
+_id,version,task,pretrained,classifier,acc,avg_pre,avg_recall,avg_f1
+6670246468b9130d04e65e05,38,acsa,vinai/phobert-base,lstm,0.9502899751449876,0.712434410383867,0.7358171907260526,0.7121539686223632

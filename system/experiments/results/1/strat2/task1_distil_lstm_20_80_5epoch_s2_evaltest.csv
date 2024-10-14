@@ -1,0 +1,2 @@
+_id,version,task,pretrained,classifier,acc,avg_pre,avg_recall,avg_f1
+666e9f2470182366ea476e1b,50,cls,distilbert-base-multilingual-cased,lstm,0.536039768019884,0.5782845407134297,0.5076055067793336,0.5011584810699881

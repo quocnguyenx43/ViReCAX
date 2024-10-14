@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "66bacc3f537580b89523e831"
+  },
+  "version": 1,
+  "task": "acsa",
+  "pretrained": "distilbert-base-multilingual-cased",
+  "classifier": "cnn",
+  "acc": 0.45454545454545453,
+  "avg_pre": 0.2685406698564593,
+  "avg_recall": 0.29015151515151516,
+  "avg_f1": 0.24528326850308274
+}]

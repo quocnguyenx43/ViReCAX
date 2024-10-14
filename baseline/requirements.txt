@@ -1,0 +1,12 @@
+datasets==2.19.1
+numpy==1.26.4
+pandas==2.2.2
+rich==13.7.1
+scikit_learn==1.4.2
+torch==2.2.0
+tqdm==4.66.4
+transformers==4.37.2
+bert_score
+gdown
+rouge_score
+gdown

@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "66bb4683b1106eb38646a5b5"
+  },
+  "version": 1,
+  "task": "cls",
+  "pretrained": "distilbert-base-multilingual-cased",
+  "classifier": "cnn",
+  "acc": 0.38723051409618575,
+  "avg_pre": 0.44529789413858595,
+  "avg_recall": 0.43469001972146826,
+  "avg_f1": 0.363991779815335
+}]

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <div class="mermaid">
+    
+graph TD;
+    A0["Input"] --> A["Pretrained Model"] 
+    A -- or --> B2["FCs ModuleList 1(4)<br>hidden_size=Pretrained's<br>hidden_size,<br>512"]
+    A -- or --> B["LSTM ModuleList 1(4)<br>hidden_size=Pretrained's<br>hidden_size,<br>num_layers=1"]
+    B --> C["LSTM ModuleList 2(4)<br>hidden_size=128,<br>num_layers=1"]
+    A -- or --> B1["CNN ModuleList 1(4)<br>(in_channels=1,<br>out_channels=768,<br>kernel_size=256,<br>padding=32)"]
+    B1 -- ReLU --> C1["CNN ModuleList 2(4)<br>(in_channels=768,<br>out_channels=384,<br>kernel_size=128,<br>padding=16)"]
+    C -- Dropout, <br> ReLU --> D["ModuleList FCs 2 <br> (batch_size, 4, 512)"]
+    C1 -- Max Pooling,<br>ReLU --> D
+    B2 -- ReLU<br>Dropout --> D
+    D -- Dropout, <br> ReLU --> E["ModuleList FCs 3 <br> (batch_size, 4, 4)"]
+    E -- Softmax,<br>Stack,<br>Transpose --> F["Output <br>(batch_size, 4, 4)"]
+
+    </div>
+</body>
+</html>
