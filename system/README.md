@@ -80,7 +80,9 @@ In MongoDB, you need to create a database named "kafka_test" and the following c
 -   user_report: contains reports of clients.
 
 Additionally, you can rename the collections or database as per your preference in the `config.yaml` file located in the root directory of the project.
+
 Also, you need to create the version 1 result for choosing model and online learning. You can find the examples in \models\v1_dev, with task_1_.json file for CLS task (model_evaluation collection), and task_2_.json files for ACSA task (acsa_evaluation collection).
+
 You also need to rename models' parameters (.pth file) follow the pattern model_*version*.pth for CLS task, and acsa_*version*.pth for ACSA task. For example, you need to create the model_1.pth file corresponding to the result of version 1 in model_evaluation collection.
 
 ### 3.3. Running the Chrome Extension
