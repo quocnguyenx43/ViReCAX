@@ -111,4 +111,4 @@ Moreover, if you delete data from the "train" collection, and the online learnin
 
 The results of each online learning batch will be stored in the acsa_evaluation and model_evaluation collections for the ACSA and CLS tasks, respectively.
 
-*Attention*: If you need to do the experiment again, you need to delete and re-initialize the models files in \models and results in MongoDB collection corresponding to the task you are doing. Also, delete the offset in offset and offset_2 collection to restart the pointer.
+*Attention*: If you need to do the experiment again, you need to delete and re-initialize the models files in \models and results in MongoDB collection corresponding to the task you are doing. Also, delete the offset in "offset" and "offset_2" collection to restart the reading position of the online learning process.
