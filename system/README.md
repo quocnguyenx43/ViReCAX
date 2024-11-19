@@ -29,6 +29,7 @@ Below is a description of the main directories in the project:
         -   **online_training_*.py**: Files that manage the online learning process.
         -   **predict.py**: File for predicting results for streaming data sent by users.
 -   **data/**: Contains labeled and processed data.
+-   **models/**: Contains models' parameters (.pth file).
 -   **experiments/**: Contains experimental results and necessary files for experiments:
     -   **train_to_mongo.py**: Pushes CSV training data into the MongoDB collection named "train."
     -   **send_multiple_request.py**: Sends multiple requests within a specified time frame to test the system's resilience.
@@ -79,12 +80,16 @@ In MongoDB, you need to create a database named "kafka_test" and the following c
 -   user_report: contains reports of clients.
 
 Additionally, you can rename the collections or database as per your preference in the `config.yaml` file located in the root directory of the project.
+Also, you need to create the version 1 result for choosing model and online learning. You can find the examples in \models\v1_dev, with task_1_.json file for CLS task (model_evaluation collection), and task_2_.json files for ACSA task (acsa_evaluation collection).
+You also need to rename models' parameters (.pth file) follow the pattern model_*version*.pth for CLS task, and acsa_*version*.pth for ACSA task. For example, you need to create the model_1.pth file corresponding to the result of version 1 in model_evaluation collection.
 
 ### 3.3. Running the Chrome Extension
 
 Open Chrome, go to Manage Extensions or `chrome://extensions/`. Select "Load unpacked," choose the `extension` folder in the project, and click "Select Folder" to load the extension into Chrome.
 
 ### 3.4. Running the Main Processors
+
+**You need to 
 
 #### 3.4.1. Sending and Receiving Streaming Data
 
@@ -103,3 +108,5 @@ It’s important to note that the data used for online learning will be taken fr
 Moreover, if you delete data from the "train" collection, and the online learning process does not occur even with sufficient batch data, you need to delete the data in the two collections: "offset" and "offset_2" to reset the reading position of the online learning process.
 
 The results of each online learning batch will be stored in the acsa_evaluation and model_evaluation collections for the ACSA and CLS tasks, respectively.
+
+*Attention*: If you need to do the experiment again, you need to delete and re-initialize the models files in \models and results in MongoDB collection corresponding to the task you are doing. Also, delete the offset in offset and offset_2 collection to restart the pointer.
