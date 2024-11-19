@@ -21,4 +21,5 @@ Updating...
 
 For any questions, please contact our corresponding author:
   - Mr. Luu Thanh Son at sontl@uit.edu.vn
-  - Mr. Nguyen Huynh Vuong Quoc at 20521813@gm.uit.edu.vn
+  - Mr. Nguyen Huynh Vuong Quoc at 20521813@gm.uit.edu.vn for any question about offline learning baseline models and dataset
+  - Mr. Tran Hoang Anh at 20521079@gm.uit.edu.vn for any question about online learning systems
