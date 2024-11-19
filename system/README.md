@@ -91,8 +91,6 @@ Open Chrome, go to Manage Extensions or `chrome://extensions/`. Select "Load unp
 
 ### 3.4. Running the Main Processors
 
-**You need to 
-
 #### 3.4.1. Sending and Receiving Streaming Data
 
 After starting Kafka and the extension, you need to run `client_handler.py` in the `client_handler` directory and `predict.py` in the `processor` directory. For `predict.py`, wait until the models are fully loaded and the protocols for Spark and Kafka are established.
