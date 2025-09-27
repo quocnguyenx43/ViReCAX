@@ -100,3 +100,5 @@ flowchart TD
 
     %% Click Event for Browser Extension
     click H1 "https://github.com/quocnguyenx43/virecax/tree/master/system/extension"
+
+
