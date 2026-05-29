@@ -1,6 +1,6 @@
 # ViReCAX: Vietnamese - Recruiment - Abnormal - Explanation dataset
 
-This repository contains code for our paper: Vuong-Quoc Nguyen Huynh, Bao-Khanh Truong Phuoc, Anh Hoang Tran, Duong Tien Pham, Son T. Luu, Trong-Hop Do. [Abnormal Job Postings Detection with Explanation on Vietnamese Job Hunter Platforms](https://arxiv.org/) was published at [Neural Computing and Applicationss](https://doi.org/10.1007/s00521-026-12153-5) journal.
+This repository contains code for our paper: Vuong-Quoc Nguyen Huynh, Bao-Khanh Truong Phuoc, Anh Hoang Tran, Duong Tien Pham, Son T. Luu, Trong-Hop Do. [Abnormal Job Postings Detection with Explanation on Vietnamese Job Hunter Platforms](https://doi.org/10.1007/s00521-026-12153-5) was published at [Neural Computing and Applicationss](https://link.springer.com/journal/521) journal.
 
 The repository is structured as follows:
   - `baseline`: Contains experiments on offline learning baseline models on the dataset.
