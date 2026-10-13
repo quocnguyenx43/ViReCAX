@@ -7,7 +7,7 @@ The repository is structured as follows:
   - `system`: Contains experiments on online learning systems with three different strategies.
 
 To access the dataset, please download the [ViReCAX_User_Agreement.docx](ViReCAX_User_Agreement.docx) from this repository, fill and sign it, and send the signed document back in **PDF format** to the following email addresses:
-  - Mr. Luu Thanh Son at sontl@uit.edu.vn
+  - Mr. Luu Thanh Son at sonlt@uit.edu.vn
   - Mr. Nguyen Huynh Vuong Quoc at 20521813@gm.uit.edu.vn
 
 # Abstract
@@ -33,6 +33,6 @@ For any usage related to all codes and data used from our repository, please cit
 ```
 
 For any questions, please contact our corresponding author:
-  - Mr. Luu Thanh Son at sontl@uit.edu.vn
+  - Mr. Luu Thanh Son at sonlt@uit.edu.vn
   - Mr. Nguyen Huynh Vuong Quoc at 20521813@gm.uit.edu.vn for any question about offline learning baseline models and dataset
   - Mr. Tran Hoang Anh at 20521079@gm.uit.edu.vn for any question about online learning systems
